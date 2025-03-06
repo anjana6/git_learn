@@ -74,6 +74,10 @@
 
     > used if you want to apply particular commit from one branch into another branch. mainly used if you don't want to merge the whole branch and you want some of the commits.eg: used for the bug fixes where you want to place that bugfix commit in all the version branches.
 
+* #### git cherry-pick \<commit hash>  \<commit hash>
+
+    > used if you want to apply multiple commit from one branch into another branch.
+
 * #### git reset \<commit hash> --hard 
 
     > moves the files both working and stating area
@@ -213,71 +217,71 @@
 
     >Set the upstream repo
 
-* ### git tag or git tag -l
+* #### git tag or git tag -l
 
     > view all the tags
 
-* ### git tag \<name> 
+* #### git tag \<name> 
 
     > can search tag by name
 
-* ### git tag \<name*>
+* #### git tag \<name*>
 
     > can search tag by name. That should be start by that name
 
-* ### git tag \<*name*>
+* #### git tag \<*name*>
 
     > can search tag by name, name may be anywhere
 
-* ### git tag \<tagname(V1.0.0)>
+* #### git tag \<tagname(V1.0.0)>
 
     > create tag. This is called as lightweight tag
 
-* ### git tag -a <tagname(V1.0.0)>
+* #### git tag -a <tagname(V1.0.0)>
 
     > create tag. This is annotated tag.you can add extra details to tag.
 
-* ### git show <tagname> 
+* #### git show <tagname> 
 
     > can see the tag details.
 
-* ### git push origin <tagname>
+* #### git push origin <tagname>
 
     > push specific tag to remote repo
 
-* ### git push origin --tags 
+* #### git push origin --tags 
 
     > push all the tags to remote repo
 
-* ### git tag -d <tagname>
+* #### git tag -d <tagname>
 
     > delete the tag in local
 
-* ### git push origin -d <tagname>
+* #### git push origin -d <tagname>
 
     > delete tag in origin
 
-* ### git push oriign -d <tagname> <tagname>
+* #### git push oriign -d <tagname> <tagname>
 
     > delete multiple tag in origin
 
-* ### git tag <tagname> <referencecommit>
+* #### git tag <tagname> <referencecommit>
 
     > create tag for pass commit 
 
-* ### git reflog show head 
+* #### git reflog show head 
 
     > can see the behavior of head via the logs. those logs are deleted after 90days.
 
-* ### git reflog show <branch> 
+* #### git reflog show <branch> 
 
     > can see behavior of branch via the logs. This reflog mainly when we get back deleted commit. because we can see all the action using reflog command.
 
-* ### git reflog show master@{one.day.ago || 1.week.ago}
+* #### git reflog show master@{one.day.ago || 1.week.ago}
 
     > can see one day ago logs
 
-* ### git config --global alias.br "branch"
+* #### git config --global alias.br "branch"
 
     > you can set alias and the you can use br instead of branch
     eg: git branch = git br
